@@ -243,6 +243,34 @@ figure {
 
   .about {
     float: right;
+    background-color: black;
+    color: white;
+  }
+
+}
+
+@media (min-width: 992px) {
+
+  .movie:not(:first-child) .movie-overview {
+    display: none;
+  }
+
+  .movie:nth-child(n + 2) {
+    width: 33%;
+    float: left;
+  }
+
+  .movie-poster {
+  display: block;
+  width: 100%;
+  }
+
+  .movie:first-child .movie-poster {
+    display: none;
+  }
+
+  .movie:not(:first-child) .movie-backdrop {
+    display: none;
   }
 
 }
